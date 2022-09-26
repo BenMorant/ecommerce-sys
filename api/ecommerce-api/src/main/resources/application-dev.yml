@@ -1,0 +1,10 @@
+server:
+  address: localhost
+  port: 8090
+
+logging:
+  level:
+    root: INFO
+    com.benmorant: DEBUG
+  pattern:
+    console: "%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg %replace(%ex){'[\r\n]+', '\\n'}%nopex%n"
